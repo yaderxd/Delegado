@@ -38,7 +38,12 @@ namespace Lamdba
             };
             foreach (var item in listado.Where(Object=>Object.Edad>18))
             {
-
+                Console.WriteLine(item.Nombre);
+            }
+            var listadoconfiltro = listado.Where(x => x.Apellido.Contains("M"));
+            foreach (var item in listadoconfiltro)
+            {
+                Console.WriteLine(item.Apellido);
             }
         Console.ReadLine();
         }
